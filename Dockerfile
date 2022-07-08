@@ -2,7 +2,7 @@ FROM golang:1.18.3-alpine3.16 as develop
 
 WORKDIR /usr/src/app
 
-COPY . .
+COPY ./challenge.go .
 RUN go build challenge.go
 
 
